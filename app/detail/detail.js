@@ -1,7 +1,7 @@
 (function(){
     "use strict";
 
-    angular.module('contacts.detail',[])
+    angular.module('contacts.detail',['ngRoute', 'contacts.data'])
         .config(['$routeProvider', function($routeProvider) {
             $routeProvider.when('/detail/:id', {
                 templateUrl: 'app/detail/detail.html',
