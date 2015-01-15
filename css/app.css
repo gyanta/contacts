@@ -1,0 +1,68 @@
+html, body{
+    font-family: 'RobotoDraft';
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a, a:hover, a:visited, a:active, a:focus{
+    color: black;
+}
+
+ul{
+    padding: 10px;
+}
+
+li{
+    list-style: none
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.contact-list .contact-thumb {
+    display:    inline-block;
+    border-radius: 40px;
+}
+
+.contact-list .contact-summary {
+    display:    inline-block;
+    vertical-align: top;
+}
+
+
+.contact-image, .contact-info{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contact-image img{
+    border-radius: 75px;
+}
+
+.contact-list .contact-summary .name,
+.contact-info .firstname, 
+.contact-info .lastname{
+    text-transform: capitalize;
+}
+
+.contact-info{
+    margin: 20px;
+}
+
+.loading-indicator{
+    top: 0;
+    text-align: center;
+    
+}
+
+.loading-indicator span{
+    background: yellow;
+    width: auto;
+    border: 1px solid lightgray;
+    padding: 0 5px;
+}
