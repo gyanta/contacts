@@ -4,7 +4,7 @@
     angular.module('contacts.list',['ngRoute', 'contacts.data'])
         .config(['$routeProvider', function($routeProvider) {
             $routeProvider.when('/list', {
-                templateUrl: 'app/list/list.html',
+                templateUrl: 'list/list.html',
                 controller: 'ListController',
                 resolve: {
                     contacts: ['contactFactory', function(contactFactory){
@@ -22,7 +22,7 @@
                 scope: {
                     contact: '='
                 },
-                templateUrl: 'app/list/listItem.html',
+                templateUrl: 'list/listItem.html',
                 link: function(scope){
                     scope.name = scope.contact.name.first + ' ' + scope.contact.name.last;
                 }

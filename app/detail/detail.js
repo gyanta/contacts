@@ -4,7 +4,7 @@
     angular.module('contacts.detail',['ngRoute', 'contacts.data'])
         .config(['$routeProvider', function($routeProvider) {
             $routeProvider.when('/detail/:id', {
-                templateUrl: 'app/detail/detail.html',
+                templateUrl: 'detail/detail.html',
                 controller: 'DetailController',
                 resolve: {
                     contact: ['contactFactory', '$route', function(contactFactory, $route){
